@@ -18,6 +18,16 @@ body {
   color: var(--main-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .list {
   list-style: none;
 }
@@ -44,7 +54,31 @@ body {
   color: var(--accent-color);
 }
 
+/*  контейнер */
+
+.container {
+  width: 1600px;
+  padding-left: 0;
+  padding-right: 0;
+}
 /* секцыя хедер */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-list {
+  display: flex;
+}
+
+.address {
+  display: flex;
+}
+
+.address-item {
+  display: flex;
+}
 
 .logo-dark {
   color: #000000;
