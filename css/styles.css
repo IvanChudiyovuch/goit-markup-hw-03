@@ -32,6 +32,12 @@ p {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -54,31 +60,29 @@ p {
   color: var(--accent-color);
 }
 
-/*  контейнер */
-
-.container {
-  width: 1600px;
-  padding-left: 0;
-  padding-right: 0;
-}
 /* секцыя хедер */
 
-.header {
-  display: flex;
-  justify-content: space-around;
+/* .header {
+
 }
 
 .header-list {
-  display: flex;
+
+}
+.header-item {
+
+}
+.address-item {
+ 
 }
 
 .address {
-  display: flex;
+
 }
 
 .address-item {
-  display: flex;
-}
+
+} */
 
 .logo-dark {
   color: #000000;
@@ -139,6 +143,7 @@ p {
 /*  Секцыя герой */
 
 .hero {
+  margin-bottom: 94px;
   background-color: #c0c0c0;
 }
 
@@ -174,6 +179,10 @@ p {
 
 /* ---Наши особенности--- */
 
+.specifics {
+  margin-bottom: 94px;
+}
+
 .specifics-title {
   font-weight: 700;
   font-size: 14px;
@@ -191,6 +200,10 @@ p {
 }
 
 /*  секция чем ми занимаемся */
+
+.occupation {
+  margin-bottom: 94px;
+}
 
 .occupation-title {
   font-weight: 700;
@@ -212,7 +225,7 @@ p {
   color: var(--main-color);
 }
 
-.team-title {
+.team-list-title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
