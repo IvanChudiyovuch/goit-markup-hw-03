@@ -28,6 +28,17 @@ p {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
 }
@@ -36,6 +47,8 @@ p {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -62,27 +75,10 @@ p {
 
 /* секцыя хедер */
 
-/* .header {
-
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
-
-.header-list {
-
-}
-.header-item {
-
-}
-.address-item {
- 
-}
-
-.address {
-
-}
-
-.address-item {
-
-} */
 
 .logo-dark {
   color: #000000;
@@ -143,11 +139,13 @@ p {
 /*  Секцыя герой */
 
 .hero {
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #c0c0c0;
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -180,10 +178,13 @@ p {
 /* ---Наши особенности--- */
 
 .specifics {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .specifics-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -202,10 +203,12 @@ p {
 /*  секция чем ми занимаемся */
 
 .occupation {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .occupation-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -216,7 +219,13 @@ p {
 
 /*  секция наша команда */
 
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -243,6 +252,15 @@ p {
 }
 
 /* секцыя работ */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter {
+  margin-bottom: 34px;
+}
 
 .section-btn {
   font-family: inherit;
@@ -290,6 +308,8 @@ p {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
