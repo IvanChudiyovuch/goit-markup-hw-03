@@ -142,27 +142,29 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #c0c0c0;
+  text-align: center;
 }
 
 .hero-title {
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .hero-btn {
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--active-btn-text-color);
   background-color: #2196f3;
@@ -171,7 +173,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #0e87e7;
+  background-color: #188ce8;
   color: var(--active-btn-text-color);
 }
 
@@ -318,6 +320,10 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
 }
 
 .footer-link-adress {
