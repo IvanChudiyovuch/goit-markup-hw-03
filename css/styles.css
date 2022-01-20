@@ -10,6 +10,7 @@
   --main-background-color: #ffffff;
   --accent-background-color: #2196f3;
   --active-btn-text-color: #ffffff;
+  --card-list-gap: 30px;
 }
 
 body {
@@ -48,7 +49,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .visually-hidden {
@@ -75,12 +76,19 @@ img {
 
 /* секцыя хедер */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-dark {
+  margin-right: 93px;
   color: #000000;
 }
 
@@ -94,7 +102,10 @@ img {
   color: var(--accent-color);
 }
 
-/* секцыя навигацыи */
+.site-nav {
+  display: flex;
+  align-items: center;
+}
 
 .site-nav .link {
   color: var(--main-color);
@@ -109,12 +120,18 @@ img {
   color: var(--accent-color);
 }
 
+.header-list {
+  display: flex;
+}
+
 .link {
   color: var(--secondary-color);
   text-decoration: none;
 }
 
 .header-item {
+  margin-right: 50px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: calc (16 / 14);
@@ -122,13 +139,28 @@ img {
   color: var(--main-color);
 }
 
+.header-item:last-child {
+  margin-right: 0;
+}
+
+.address {
+  display: flex;
+  margin-left: auto;
+}
+
 .address-item {
+  margin-right: 48px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.address-item:last-child {
+  margin-right: 0;
 }
 
 .address .link:hover,
@@ -168,6 +200,8 @@ img {
   letter-spacing: 0.06em;
   color: var(--active-btn-text-color);
   background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -175,6 +209,8 @@ img {
 .hero-btn:focus {
   background-color: #188ce8;
   color: var(--active-btn-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* ---Наши особенности--- */
@@ -182,6 +218,15 @@ img {
 .specifics {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.specifics-list {
+  display: flex;
+  justify-content: center;
+}
+
+.specifics-item:not(:last-child) {
+  margin-right: var(--card-list-gap);
 }
 
 .specifics-title {
@@ -219,6 +264,15 @@ img {
   color: var(--main-color);
 }
 
+.occupation-list {
+  display: flex;
+  justify-content: center;
+}
+
+.occupation-item:not(:last-child) {
+  margin-right: var(--card-list-gap);
+}
+
 /*  секция наша команда */
 
 .team {
@@ -236,11 +290,31 @@ img {
   color: var(--main-color);
 }
 
+.team-card {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--card-list-gap));
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: var(--card-list-gap);
+}
+
 .team-content {
+  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .team-list-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -266,7 +340,20 @@ img {
   margin-bottom: 34px;
 }
 
+.section-list {
+  display: flex;
+  justify-content: center;
+}
+
+.section-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .section-btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -281,16 +368,38 @@ img {
 
 .section-btn:hover,
 .section-btn:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
   background-color: var(--accent-background-color);
   color: var(--active-btn-text-color);
 }
 
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-list-gap));
+  margin-right: calc(-1 * var(--card-list-gap));
+}
+
+.work-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: var(--card-list-gap);
+  margin-right: var(--card-list-gap);
+}
+
+.work-card {
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
 .work-item-content {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
 
 .work-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -326,6 +435,9 @@ img {
   margin-bottom: 20px;
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-link-adress {
   font-style: normal;
   font-size: 14px;
