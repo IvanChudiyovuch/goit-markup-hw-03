@@ -88,7 +88,6 @@ img {
 }
 
 .logo-dark {
-  margin-right: 93px;
   color: #000000;
 }
 
@@ -122,6 +121,7 @@ img {
 
 .header-list {
   display: flex;
+  margin-left: 93px;
 }
 
 .link {
@@ -143,9 +143,14 @@ img {
   margin-right: 0;
 }
 
-.address {
+.header-address {
   display: flex;
   margin-left: auto;
+}
+
+.header-address .link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
 
 .address-item {
@@ -161,11 +166,6 @@ img {
 
 .address-item:last-child {
   margin-right: 0;
-}
-
-.address .link:hover,
-.link:focus {
-  color: var(--accent-color);
 }
 
 /*  Секцыя герой */
@@ -190,7 +190,7 @@ img {
 
 .hero-btn {
   min-width: 200px;
-  border-radius: 4px;
+  border: transparent;
   padding: 10px 32px;
 
   font-family: inherit;
@@ -214,11 +214,6 @@ img {
 }
 
 /* ---Наши особенности--- */
-
-.specifics {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .specifics-list {
   display: flex;
@@ -250,7 +245,7 @@ img {
 /*  секция чем ми занимаемся */
 
 .occupation {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .occupation-title {
@@ -266,7 +261,6 @@ img {
 
 .occupation-list {
   display: flex;
-  justify-content: center;
 }
 
 .occupation-item:not(:last-child) {
@@ -276,9 +270,9 @@ img {
 /*  секция наша команда */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background: #f5f4fa;
 }
+
 .team-title {
   margin-bottom: 50px;
 
@@ -336,13 +330,10 @@ img {
   padding-bottom: 94px;
 }
 
-.filter {
-  margin-bottom: 34px;
-}
-
 .section-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .section-item:not(:last-child) {
@@ -391,10 +382,12 @@ img {
 
 .work-card {
   background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
 }
 .work-item-content {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .work-title {
@@ -438,6 +431,12 @@ img {
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.address .link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
 .footer-link-adress {
   font-style: normal;
   font-size: 14px;
